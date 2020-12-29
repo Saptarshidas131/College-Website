@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <meta content="text/html" charset="UTF-8">
+    <!-- Adding links to stylesheet and javascript-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="validate.js"></script>
+
+    <style>
+        .color {
+            color: #fff;
+            background-color: #5f6773;
+        }
+
+        .contact-form {
+            border: 1px solid red;
+            background-color: #03fcf0;
+        }
+
+    </style>
+</head>
+
+<body id="up">
+    <img src="images/logo.png" height="75" width="75" float="left" alt="college logo">
+    <img src="images/name.png" height="80" width="200" alt="college name">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alumni.html">Alumni</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="photo.html">Photo Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <h3>Working Hours</h3>
+        <p>9:00a.m to 5:00p.m (Monday to Friday)</p>
+        <br>
+        <br>
+        <h3>Mailing Address</h3>
+        <br>
+        <p><b>Address:</b> College Address</p>
+        <br>
+        <p><b>Phone:</b>(+91) 97XXXXXXXX</p>
+        <br>
+        <p><b>Fax:</b> (+91) XXXXXXXXXX</p>
+        <br>
+        <p><b>Email:</b> xyz@edu.com</p>
+        <br>
+        <br>
+        <h3>Department Heads</h3>
+        <p><a href="#">Click here for more details</a></p>
+        <br>
+        <br>
+        <h3>Admission</h3>
+        <p><a href="#">Click here for admission details</a></p>
+        <a title="click to go up" href="#up"><img src="images/up.png" class="rounded float-right" height="50" width="50" alt="up"></a>
+        <br>
+        <h3>Fill this Form to Contact Us</h3>
+        <div id="input" class="contact-form">
+            <form method="post" onsubmit="validate3()">
+                <label for="name" class="text">Name</label>
+                <input type="text" class="field" autofocus required placeholder="Enter Name" minlength=3 maxlength=50 onchange="checkName()">
+                <br>
+                <label for="email" class="text">Email</label>
+                <input type="email" class="field" name="email" required placeholder="abc@xyz.com" maxlength=50 onchange="checkEmail()">
+                <br>
+                <label for="phone" class="text">Phone</label>
+                <input type="type" class="field" required minlength=10 maxlength=12 placeholder="Enter phone number" onchange="checkPhone()">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer class="color">
+        <hr>
+        <p>2020 College Name. All rights reserved.</p>
+        <p> <strong>Designed by: Saptarshi Das <em>( An Independant Developer)</em></strong></p>
+        <address>College Address, st. name, st. number</address>
+    </footer>
+</body>
+
+</html>

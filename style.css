@@ -1,0 +1,61 @@
+* {
+  text-align: center;
+}
+
+h2 {
+  background-color: #e8c00c;
+  color: #193abf;
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px blue;
+  margin: 20px 50px 20px 50px;
+  padding: 10px 10px 10px 10px;
+}
+
+#input {
+  background-color: #47e6e0;
+}
+
+#outline {
+  outline-color: red;
+  outline-width: 3px;
+  outline-style: dotted;
+}
+
+.format {
+  font-family: "Courier New", monospace;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#email {
+  margin: 20px 40px 10px 20px;
+  padding: 5px 5px 5px 20px;
+}
+
+#pwd {
+  margin: 20px 10px 10px 20px;
+  padding: 5px 5px 5px 20px;
+}
+
+#showhide {
+  background-color: #ad971a;
+  border-radius: 100%;
+}
+
+.login {
+  background-color: #04b559;
+  color: #0a11f0;
+}
+
+.forgot {
+  background-color: #e30918;
+}
+
+a:link {
+  color: #0602f0;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #f00cd1;
+}

@@ -1,0 +1,71 @@
+* {
+  text-align: center;
+}
+
+h2 {
+  background-color: #e8c00c;
+  color: #193abf;
+  text-decoration: underline;
+  text-shadow: 1px 1px 1px blue;
+  margin: 20px 50px 20px 50px;
+  padding: 10px 10px 10px 10px;
+}
+
+#input {
+  background-color: #47e6e0;
+}
+
+.pass {
+  margin: 10px 10px 10px 60px;
+  padding: 10px 1px 10px 60px;
+}
+
+#pwd {
+  margin: 10px 10px 10px 10px;
+  padding: 10px 50px 15px 0px;
+}
+
+#cpwd {
+  margin: 10px 10px 20px 10px;
+  padding: 10px 50px 15px 10px;
+}
+
+#dept {
+  margin: 10px 10px 10px 20px;
+}
+
+#register {
+  margin: 10px 20px 10px 50px;
+  padding: 5px 10px 5px 10px;
+  background-color: #9721db;
+}
+
+.field {
+  margin: 10px 1px 10px 10px;
+  padding: 10px 50px 15px 10px;
+}
+
+.text {
+  margin: 10px 10px 10px 80px;
+}
+
+
+.text, .pass{
+  font-weight: bold;
+}
+
+#showhide1,#showhide2 {
+  background-color: #ad971a;
+  border-radius: 100%;
+
+
+
+a:link {
+  color: #0602f0;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #f00cd1;
+}
+

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>College Homepage</title>
+    <meta content="text/html" charset="UTF-8">
+    <!-- Adding links to stylesheet, bootstrap and javascript-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        .color {
+            color: #fff;
+            background-color: #5f6773;
+        }
+
+        .nav-color {
+            background-color: #b5de3c;
+            color: #ffffff;
+        }
+
+    </style>
+</head>
+
+<body id="up">
+    <!-- Adding logo and name -->
+    <img src="images/logo.png" height="75" width="75" float="left" alt="college logo">
+    <img src="images/name.png" height="80" width="200" alt="college name">
+    <!-- Adding a nav bar-->
+    <nav class="navbar sticky-top navbar-expand-lg nav-color">
+        <br>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="home.html" id="navbarHomeMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Home
+                </a>
+                <div class="dropdown-menu nav-color" aria-labelledby="navbarHomeMenuLink">
+                    <a class="dropdown-item" href="about.html">About</a>
+                    <a class="dropdown-item" href="contact.html">Contact Us</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="students.html" id="navbarStudentsMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Students
+                </a>
+                <div class="dropdown-menu nav-color" aria-labelledby="navbarStudentsMenuLink">
+                    <a class="dropdown-item" href="#">Academic Division</a>
+                    <a class="dropdown-item" href="#">Student Wellness</a>
+                    <a class="dropdown-item" href="#">Grievence cell</a>
+                    <a class="dropdown-item" href="#">Gender cell</a>
+                </div>
+            </li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" href="login.html">Login <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="register.html">Register</a>
+                    <a class="nav-link" href="alumni.html">Alumni</a>
+                </div>
+            </div>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarMediaMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Media
+                </a>
+                <div class="dropdown-menu nav-color" aria-labelledby="navbarMediaMenuLink">
+                    <a class="dropdown-item" href="#">News</a>
+                    <a class="dropdown-item" href="photo.html">Photo Gallery</a>
+                    <a class="dropdown-item" href="#">Video Gallery</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Adding carousel -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="4000">
+                    <img src="images/college.jpg" class="d-block w-100" alt="college campus" height="300" width="300">
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="images/library.jpg" class="d-block w-100" alt="college library" height="300" width="300">
+                </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="images/ground.jpg" class="d-block w-100" alt="college ground" height="300" width="300">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br>
+        <br>
+        <!-- Adding cards -->
+        <!-- Popular Courses -->
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card text-white bg-secondary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">B.Tech/M.Tech/B.E/M.E Courses</h5>
+                        <p class="card-text">Our College is providing in B.Tech and M.Tech courses in all major branches.</p>
+                        <a href="#" class="btn btn-primary">View B.Tech Courses</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-white bg-secondary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Diploma Courses</h5>
+                        <p class="card-text">We are poviding Diploma Courses in all popular branches.</p>
+                        <a href="#" class="btn btn-primary">View Diploma Courses</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card text-white bg-secondary mb-3">
+                        <h5 class="card-title">BBA/BCA/MBA/MCA Courses</h5>
+                        <p class="card-text">We are also taking adimission in BBA, BCA, MBA and MCA.</p>
+                        <a href="#" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card text-white bg-secondary mb-3">
+                        <h5 class="card-title">B.Pharm/M.Pharm Courses</h5>
+                        <p class="card-text">We are also taking adimission in B.Pharm and M.Pharm.</p>
+                        <a href="#" class="btn btn-primary">View Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A bit introduction -->
+        <div class="jumbotron jumbotron-fluid" style="background-color: #f0bc22;">
+            <div class="container">
+                <h4 class="display-4">About College</h4>
+                <p class="lead">This college is established on 20XX and has made its way to the list of top colleges of the world, offering Engineering, Diploma, Buisness, Pharmacy courses.
+                    Top students passes out evey year making our college more popular and proud.</p>
+            </div>
+            <br>
+        </div>
+        <div class="jumbotron jumbotron-fluid" style="background-color: #00ffcc;">
+            <div class="container">
+                <h4 class="display-4">Vison and Mission</h4>
+                <p class="lead">We want to make our college to make it to the top of the list of the top colleges of the world while giving an opportunity to the students to make best of their carrer.</p>
+            </div>
+        </div>
+
+        <!-- Pictures -->
+        <h3>College At a glance</h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card text-white bg-success mb-3">
+                    <img src="images/audi.jpg" alt="auditorium image">
+                    <div class="card-body">
+                        <h5 class="card-title">College Auditorium</h5>
+                        <p class="card-text">This is the college auditorium, built at 20XX.</p>
+                        <a href="photo.html" class="btn btn-primary">Go to Photo Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-white bg-success mb-3">
+                    <img src="images/clab.jpg" alt="computer lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Lab</h5>
+                        <p class="card-text">This is the computer lab of college, fully Air Conditioned.</p>
+                        <a href="photo.html" class="btn btn-primary">Go to Photo Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-white bg-success mb-3">
+                    <img src="images/mlab.jpg" alt="mechanical lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Lab</h5>
+                        <p class="card-text">This is the mechanical lab of college, has all machines.</p>
+                        <a href="photo.html" class="btn btn-primary">Go to Photo Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card text-white bg-success mb-3">
+                    <img src="images/elab.jpg" alt="electrical lab">
+                    <div class="card-body">
+                        <h5 class="card-title">Electrical Lab</h5>
+                        <p class="card-text">This is the electrical lab of college, has all machines and instruments.</p>
+                        <a href="photo.html" class="btn btn-primary">Go to Photo Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a title="click to go up" href="#up"><img src="images/up.png" class="rounded float-right" height="50" width="50" alt="up"></a>
+        <!-- main ends -->
+    </main>
+    <!-- footer area -->
+    <footer class="color">
+        <hr>
+        <p>2020 College Name. All rights reserved.</p>
+        <p> <strong>Designed by: Saptarshi Das <em>( An Independant Developer)</em></strong></p>
+        <address>College Address, st. name, st. number</address>
+    </footer>
+</body>
+
+</html>
